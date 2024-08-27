@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+function checkNumber(num) {
+    if (num > 0) {
+        console.log(num + " is positive.");
+    } else if (num < 0) {
+        console.log(num + " is negative.");
+    } else {
+        console.log("The number is zero.");
+    }
+}
+
+checkNumber(10);  
+
+
+
+
+function checkEvenOdd(num) {
+    if (num % 2 === 0) {
+        console.log(num + " is even.");
+    } else {
+        console.log(num + " is odd.");
+    }
+}
+
+checkEvenOdd(5); 
+
+
+
+
+function findGreater(a, b) {
+    if (a > b) {
+        console.log(a + " is greater than " + b);
+    } else if (a < b) {
+        console.log(b + " is greater than " + a);
+    } else {
+        console.log("Both numbers are equal.");
+    }
+}
+
+findGreater(7, 10);  
+
+
+
+
+function calculateGrade(percentage) {
+    let grade;
+
+    if (percentage >= 90) {
+        grade = 'A';
+    } else if (percentage >= 80) {
+        grade = 'B';
+    } else if (percentage >= 70) {
+        grade = 'C';
+    } else if (percentage >= 60) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+
+    console.log("Percentage: " + percentage + "%, Grade: " + grade);
+}
+
+calculateGrade(85);  
+
+
+
+
+function greetUser() {
+    let currentHour = new Date().getHours();
+    
+    if (currentHour < 12) {
+        console.log("Good Morning!");
+    } else if (currentHour < 18) {
+        console.log("Good Afternoon!");
+    } else {
+        console.log("Good Evening!");
+    }
+}
+
+greetUser();  
+
+
+
+
+function calculateBMI(weight, height) {
+    let bmi = weight / (height * height);
+    
+    if (bmi < 18.5) {
+        console.log("Your BMI is " + bmi.toFixed(2) + ". You are underweight.");
+    } else if (bmi < 24.9) {
+        console.log("Your BMI is " + bmi.toFixed(2) + ". You have a normal weight.");
+    } else if (bmi < 29.9) {
+        console.log("Your BMI is " + bmi.toFixed(2) + ". You are overweight.");
+    } else {
+        console.log("Your BMI is " + bmi.toFixed(2) + ". You are obese.");
+    }
+}
+
+calculateBMI(70, 1.75); 
+
+
+
+
+function calculator(a, b, operation) {
+    let result;
+    
+    switch (operation) {
+        case 'add':
+            result = a + b;
+            break;
+        case 'sub':
+            result = a - b;
+            break;
+        case 'mul':
+            result = a * b;
+            break;
+        case 'div':
+            if (b !== 0) {
+                result = a / b;
+            } else {
+                console.log("Error: Division by zero");
+                return;
+            }
+            break;
+        default:
+            console.log("Invalid operation");
+            return;
+    }
+    
+    console.log("The result is: " + result);
+}
+
+calculator(10, 5, 'add'); 
+
+
+
+
+function checkCNICEligibility(name, age) {
+    if (age >= 18) {
+        console.log(name + ", you are eligible for a CNIC.");
+    } else {
+        console.log(name + ", you are not eligible for a CNIC.");
+    }
+}
+
+checkCNICEligibility("Ali", 20);  
+
+
+
+
+</script>
+</head>
+<body>
+   
+    
+    
+</body>
+</html>
